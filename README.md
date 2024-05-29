@@ -68,9 +68,9 @@ This directory should have the following setup:
 my-domain-for-omeka-s
     .env
     .docker-compose.yml
-    /secrets
-    |_DB_PASSWORD
-    |_DB_ROOT_PASSWORD
+    |secrets
+    |_DB_PASSWORD.txt
+    |_DB_ROOT_PASSWORD.txt
 ```
 ### 3. Run the network
 
