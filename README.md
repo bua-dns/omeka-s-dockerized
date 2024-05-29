@@ -25,7 +25,7 @@ OMEKA_S_VERSION=4.1.0
 PMA_PORT=819X
 OMEKA_S_PORT=811X
 ```
-PMA_PORT and OMEKA_S_PORT **must** be unique on the server the instance is running on. So, if you plan to ran multiple instances of Omeka S in Docker containers, make shure to count the ports up properly. A good practice is to name consistantly:
+PMA_PORT and OMEKA_S_PORT **must** be unique on the server the instance is running on. So, if you plan to run multiple instances of Omeka S in Docker containers, make shure to count the ports up properly. A good practice is to name consistantly:
 
 ```shell
 ### Docker
@@ -58,7 +58,7 @@ DB_NAME and DB_USERNAME can (but must not) stay the same for all containers. The
 
 docker-compose.yml is configured automatically on the server (via .env and /secrets), so you don't have to touch this file.
 
-2. Upload
+### 2. Upload
 
 Upload the files and the secrets folder to the directory Omeka S shall run in.
 
@@ -72,7 +72,7 @@ my-domain-for-omeka-s
     |_DB_PASSWORD
     |_DB_ROOT_PASSWORD
 ```
-3. Run the network
+### 3. Run the network
 
 Navigate into this directory on your server and start a new instance of Omeka S with
 
