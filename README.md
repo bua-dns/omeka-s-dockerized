@@ -71,14 +71,6 @@ Upload the files and the secrets folder to the directory where Omeka S will run.
 This directory should have the following structure:
 
 ```bash
-my-domain-for-omeka-s
-    .env
-    .docker-compose.yml
-    |secrets
-    |_DB_PASSWORD.txt
-    |_DB_ROOT_PASSWORD.txt
-```
-```bash
 my-domain-for-omeka-s/
 ├── .env
 ├── docker-compose.yml
