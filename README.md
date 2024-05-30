@@ -3,14 +3,13 @@
 **NOTE**  
 This is a work in progress and currently has minimal documentation. More information will be added soon.
 
-## Prerequisites
-
+Prerequisites
 You need a server environment with Docker and Docker Compose installed. Ensure you have the following versions installed on your system:
 
 * Docker: Version 26.0.2 or later
 * Docker Compose: Version 2.26.1 or later
 
-Docker Compose v2 has other commands to mange networks than v1. Please verify your setup before proceeding with the deployment. 
+Docker Compose v2 has different commands for managing networks compared to v1. Please verify your setup before proceeding with the deployment.
 
 To run Omeka S, a (sub)domain is required where the instance can be accessed at the root level (not in a subdirectory).
 
