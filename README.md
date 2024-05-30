@@ -20,7 +20,7 @@ To run Omeka S, a (sub)domain is required where the instance can be accessed at 
 
 In the **.env** file, set the following values:
 
-```shell
+```bash
 ### Docker
 COMPOSE_PROJECT_NAME=a-name-for-your-project
 ### DB
@@ -34,7 +34,7 @@ OMEKA_S_PORT=811X
 ```
 PMA_PORT and OMEKA_S_PORT must be unique on the server where the instance is running. If you plan to run multiple instances of Omeka S in Docker containers, ensure to increment the ports appropriately. A good practice is to name them consistently:
 
-```shell
+```bash
 ### Docker
 COMPOSE_PROJECT_NAME=omeks-s-instance-1
 ### DB
@@ -47,7 +47,7 @@ PMA_PORT=8191
 OMEKA_S_PORT=8111
 ```
 
-```shell
+```bash
 ### Docker
 COMPOSE_PROJECT_NAME=omeks-s-instance-2
 ### DB
@@ -70,7 +70,7 @@ Upload the files and the secrets folder to the directory where Omeka S will run.
 
 This directory should have the following structure:
 
-```shell
+```bash
 my-domain-for-omeka-s
     .env
     .docker-compose.yml
@@ -78,16 +78,24 @@ my-domain-for-omeka-s
     |_DB_PASSWORD.txt
     |_DB_ROOT_PASSWORD.txt
 ```
+```bash
+my-domain-for-omeka-s/
+├── .env
+├── docker-compose.yml
+└── secrets/
+    ├── DB_PASSWORD.txt
+    └── DB_ROOT_PASSWORD.txt
+```
 ### 3. Run the network
 
 Navigate to this directory on your server and start a new instance of Omeka S with:
 
-```shell
+```bash
 docker compose up -d
 ```
 The feedback in the console should look something like this:
 
-```shell
+```bash
 [+] Running 4/4
  ✔ Network omeka-s-instance-5-omeka-s-network  Created  
  ✔ Container omeka-s-instance-5-omeka-s-db-1   Started  
