@@ -3,7 +3,8 @@
 **NOTE**  
 This is a work in progress and currently has minimal documentation. More information will be added soon.
 
-Prerequisites
+## Prerequisites
+
 You need a server environment with Docker and Docker Compose installed. Ensure you have the following versions installed on your system:
 
 * Docker: Version 26.0.2 or later
