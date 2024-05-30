@@ -91,3 +91,9 @@ Open the URL of your instance in the browser. Omeka will redirect to the install
 
 The volumes for your instance have been automatically created at /var/lib/docker/volumes/<name from COMPOSE_PROJECT_NAME in .env>.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+
